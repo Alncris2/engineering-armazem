@@ -1,0 +1,11 @@
+{
+  "readiness": true,
+  "confidence": 82,
+  "stages": {
+    "plan": [{"ok": true, "plan_text": "Plano local de exemplo"}],
+    "work": [{"ok": true, "changed_files": ["src/example.py"], "checks_passed": true}],
+    "simplify": [{"ok": true, "checks_passed": true}],
+    "review": [{"ok": true, "checks_passed": true, "findings": []}],
+    "activate": [{"ok": true, "checks_passed": true, "handoff_ready": true}]
+  }
+}

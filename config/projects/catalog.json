@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "projects": [
+    {
+      "slug": "webagil",
+      "description": "Aplicação Laravel com Oracle e frontend Angular separado.",
+      "repositories": [
+        {"name": "webagil-backend", "path": "C:\\htdocs\\webagil_2.0", "role": "backend", "technologies": [
+          {"name": "Laravel", "role": "framework", "declared_version": "13", "observed_version": "13.30.0", "observed_source": "composer.json"},
+          {"name": "Oracle", "role": "database"}
+        ]},
+        {"name": "webagil-frontend", "path": "C:\\htdocs\\webagil_3.0", "role": "frontend", "technologies": [
+          {"name": "Angular", "role": "framework", "declared_version": "10", "observed_version": "10.1.2", "observed_source": "package.json"}
+        ]}
+      ]
+    },
+    {
+      "slug": "server",
+      "description": "Monólito modular Node.js 14.",
+      "repositories": [
+        {"name": "server", "path": "C:\\htdocs\\server", "role": "backend", "technologies": [
+          {"name": "Node.js", "role": "runtime", "declared_version": "14"}
+        ]}
+      ]
+    },
+    {
+      "slug": "warehouse",
+      "description": "Módulo do Server com frontend Angular separado.",
+      "repositories": [
+        {"name": "server", "path": "C:\\htdocs\\server", "role": "backend", "technologies": [
+          {"name": "Node.js", "role": "runtime", "declared_version": "14"}
+        ]},
+        {"name": "warehouse-frontend", "path": "C:\\htdocs\\warehouse_3.0", "role": "frontend", "technologies": [
+          {"name": "Angular", "role": "framework", "declared_version": "10", "observed_version": "10.1.2", "observed_source": "package.json"}
+        ]}
+      ]
+    },
+    {
+      "slug": "lms",
+      "description": "Módulo do Server com frontend Angular separado.",
+      "repositories": [
+        {"name": "server", "path": "C:\\htdocs\\server", "role": "backend", "technologies": [
+          {"name": "Node.js", "role": "runtime", "declared_version": "14"}
+        ]},
+        {"name": "lms-frontend", "path": "C:\\htdocs\\lms_3.0", "role": "frontend", "technologies": [
+          {"name": "Angular", "role": "framework", "declared_version": "10", "observed_version": "10.1.2", "observed_source": "package.json"}
+        ]}
+      ]
+    },
+    {
+      "slug": "agend-node",
+      "description": "Agendador Node.js com Oracle. A versão do Node.js não foi confirmada no repositório.",
+      "repositories": [
+        {"name": "agend-node", "path": "C:\\htdocs\\agend_node_back", "role": "backend", "technologies": [
+          {"name": "Node.js", "role": "runtime"},
+          {"name": "Oracle", "role": "database"}
+        ]}
+      ]
+    },
+    {
+      "slug": "fastapi",
+      "description": "Serviço FastAPI com Oracle. Python 3.7.4 foi informado; o repositório seleciona 3.10.8.",
+      "repositories": [
+        {"name": "fastapi", "path": "C:\\htdocs\\fastapi", "role": "backend", "technologies": [
+          {"name": "Python", "role": "runtime", "declared_version": "3.7.4", "observed_version": "3.10.8", "observed_source": ".python-version"},
+          {"name": "FastAPI", "role": "framework", "observed_version": "0.121.2", "observed_source": "requirements.txt"},
+          {"name": "Oracle", "role": "database"}
+        ]}
+      ]
+    }
+  ]
+}

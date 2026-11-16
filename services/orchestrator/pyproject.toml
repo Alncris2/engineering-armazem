@@ -1,0 +1,15 @@
+[project]
+name = "workspace-orchestrator"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+  "langgraph>=1,<2",
+  "langgraph-checkpoint-postgres>=3,<4",
+  "psycopg[binary]>=3,<4",
+]
+
+[project.optional-dependencies]
+oracle = ["oracledb>=3,<4"]
+
+[tool.uv]
+package = false

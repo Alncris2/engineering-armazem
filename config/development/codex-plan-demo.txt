@@ -1,0 +1,1 @@
+Prepare a local plan for adding README.md to an otherwise empty, isolated sandbox. The file would contain only the line "Workspace Codex planning validation". No repository publication, external service, credential, or product change is part of this task.

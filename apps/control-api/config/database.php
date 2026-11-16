@@ -1,0 +1,16 @@
+<?php
+
+return [
+    'default' => env('DB_CONNECTION', 'pgsql'),
+    'connections' => [
+        'pgsql' => [
+            'driver' => 'pgsql', 'host' => env('DB_HOST', '127.0.0.1'),
+            'port' => env('DB_PORT', '5432'), 'database' => env('DB_DATABASE', 'ai_engineering_workspace'),
+            'username' => env('DB_USERNAME', 'workspace_core'), 'password' => env('DB_PASSWORD', ''),
+            'charset' => 'utf8', 'prefix' => '', 'prefix_indexes' => true,
+            'search_path' => 'public', 'sslmode' => 'prefer',
+        ],
+        'sqlite' => ['driver' => 'sqlite', 'database' => env('DB_DATABASE', ':memory:'), 'prefix' => '', 'foreign_key_constraints' => true],
+    ],
+    'migrations' => 'migrations',
+];

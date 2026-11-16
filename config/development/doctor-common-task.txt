@@ -1,0 +1,5 @@
+Prepare a Markdown development spec for a synthetic, local-only doctor task.
+
+Hypothetical change: add a pure function format_three_digits(value) to a small example module. For an integer from 0 through 999, it returns a three-character decimal string padded with leading zeros. For any other input, it raises ValueError. This is a planning exercise only: do not create or edit the module.
+
+Acceptance examples: 0 -> "000"; 7 -> "007"; 42 -> "042"; 999 -> "999"; -1, 1000 and non-integers -> ValueError. Proposed validation is isolated unit tests for these examples. There are no external systems, credentials, deployments, or unresolved decisions. State "Nenhuma." as the sole content under "## Open Questions". Include objective, scope, acceptance criteria, plan and validation. Do not claim implementation or test execution.

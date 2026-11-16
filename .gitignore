@@ -1,0 +1,53 @@
+# Segredos e configurações locais
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+secrets/
+credentials/
+
+# PHP / Laravel
+vendor/
+bootstrap/cache/*.php
+/apps/control-api/bootstrap/cache/*.php
+storage/logs/
+storage/framework/
+storage/app/private/
+.phpunit.result.cache
+
+# Node
+node_modules/
+.npm/
+.nvs/
+dist/
+build/
+coverage/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Execuções e artefatos locais
+tmp/
+temp/
+logs/
+output/
+artifacts/
+*.log
+*.pid
+state.json
+.maestri/
+
+# Sistema e editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

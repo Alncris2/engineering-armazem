@@ -1,0 +1,13 @@
+{
+  "name": "workspace/control-api",
+  "type": "project",
+  "license": "proprietary",
+  "require": {"php": "^8.3", "laravel/framework": "^13.8"},
+  "require-dev": {"mockery/mockery": "^1.6", "phpunit/phpunit": "^12.5"},
+  "autoload": {"psr-4": {"App\\": "app/"}},
+  "autoload-dev": {"psr-4": {"Tests\\": "tests/"}},
+  "scripts": {"post-autoload-dump": ["Illuminate\\Foundation\\ComposerScripts::postAutoloadDump", "@php artisan package:discover --ansi"]},
+  "config": {"sort-packages": true},
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
